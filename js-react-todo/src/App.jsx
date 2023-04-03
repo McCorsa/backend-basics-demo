@@ -32,7 +32,6 @@ function App() {
         <input type="text" placeholder="New Task" className="flex-fill" value={newEntry} onChange={(e) => setNewEntry(e.target.value)}></input>
         <button className="btn btn-primary" onClick={() => setTodos([...todos, newEntry])}>Submit</button>
       </div>
-      <p>New task is {newEntry}</p>
       <h2>Current Tasks</h2>
       <div className="d-flex flex-column gap-1">
         {todos.map((task) => <Task title={task} delTodo={delTodo} editTodo={editTodo}></Task>)}
