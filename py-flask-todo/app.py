@@ -1,10 +1,19 @@
-from flask import Flask
+from flask import Flask, redirect, render_template
 
 app = Flask(__name__)
 
+logged_in = True;
+
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def index():
+    if not logged_in:
+        return redirect("login")
+    todos = ["Task 1", "Task 2", "Task 3"]
+    return render_template("home.html", todos=todos)
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
 
 @app.route("/add/<todo>")
 def add_todo(todo):
