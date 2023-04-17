@@ -2,10 +2,14 @@
 
 {% block body %}
     <h1>Home Page</h1>
+    <form className="d-flex gap-3" method="post" action="/add">
+        <input type="text" placeholder="New Task" class="flex-fill" id="newtask" name="newtask"></input>
+        <button class="btn btn-primary">Submit</button>
+    </form>
     <h2>Your Todos</h2>
     <ul>
         {% for todo in todos %}
-            <li>{{todo}}</li>
+            <li>{{todo}} {{todos.index(todo)}} <a class="btn btn-danger" href="/delete/{{todo}}">Delete</a></li>
         {% endfor %}
     </ul>
 {% endblock %}
