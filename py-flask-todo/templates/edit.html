@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Edit todo {{todo}} (id: {{id}})</h1>
+    <form className="d-flex gap-3" method="post" action="/edit/{{id}}/">
+        <input type="text" placeholder="New name for '{{todo}}'" class="flex-fill" id="newtask" name="newtask"></input>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}

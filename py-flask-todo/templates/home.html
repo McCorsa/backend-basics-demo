@@ -9,7 +9,7 @@
     <h2>Your Todos</h2>
     <ul>
         {% for todo in todos %}
-            <li>{{todo}} {{todos.index(todo)}} <a class="btn btn-danger" href="/delete/{{todo}}">Delete</a></li>
+            <li>{{todo}} {{todos.index(todo)}} <a class="btn btn-primary" href="/edit/{{todos.index(todo)}}">Edit</a> <a class="btn btn-danger" href="/delete/{{todos.index(todo)}}">Delete</a></li>
         {% endfor %}
     </ul>
 {% endblock %}
