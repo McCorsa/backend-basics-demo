@@ -7,7 +7,7 @@ Refer to https://supabase.com/docs/reference/csharp/installing for the full inst
 
 1. Open command line and CD into `cs-console-todo`.
 2. Run `dotnet add package supabase-csharp`. (if this fails, there is a graphical way to do the install in Visual Studio I can demonstrate).
-3. Insert the following code at the beginning of `main.cs`, replacing `SUPABASE_URL` and `SUPABASE_KEY` with your URL and key.
+3. Insert the following code at the beginning of `Program.cs`, replacing `SUPABASE_URL` and `SUPABASE_KEY` with your URL and key.
 
 ```csharp
 var url = Environment.GetEnvironmentVariable("SUPABASE_URL");
