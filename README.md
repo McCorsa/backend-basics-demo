@@ -10,5 +10,6 @@ At any point, you can refer to their documentation for each supported language:
 | Flutter | https://supabase.com/docs/reference/dart/introduction |
 | Python | https://supabase.com/docs/reference/python/introduction |
 | C# | https://supabase.com/docs/reference/csharp/introduction |
+| Swift (NEW) | https://supabase.com/docs/reference/swift/introduction |
 
 You can also refer to the generated API docs inside of your project.
